@@ -1,0 +1,1 @@
+import {describe,it,expect} from 'vitest';import {mask,parseSize} from '../src/core.js';describe('snippet-manager-cli',()=>{it('parses sizes',()=>expect(parseSize('1MB')).toBe(1048576));it('masks secrets',()=>expect(mask('token=abc')).toContain('***'));});
